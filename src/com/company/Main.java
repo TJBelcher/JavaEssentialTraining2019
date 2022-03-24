@@ -13,7 +13,6 @@ public class Main {
 
         String inputPrompt = "y";
         String inputFunc = " ";
-//        String stringValue = " ";
         var nOne = 0.00;
         Double number1 = 0.00;
         Double number2 = 0.00;
@@ -58,7 +57,6 @@ public class Main {
                         (inputFunc.equals("/")) | (inputFunc.equals("\\")) |
                         (inputFunc.equals("*")) | (inputFunc.equals("x"))) {
                     System.out.println(" ");
-//                    System.out.println("Good Input!:  " + inputFunc);
                     mathOpNeeded = false;
                 }
                 else {
@@ -87,7 +85,6 @@ public class Main {
                         (inputPrompt.equalsIgnoreCase("yes")) |
                         (inputPrompt.equalsIgnoreCase("n")) |
                         (inputPrompt.equalsIgnoreCase("no"))) {
-//                    System.out.println("Good Input!:  " + inputPrompt);
                     continuationNeeded = false;
                     inputChk = false;
                 } else {
@@ -100,5 +97,3 @@ public class Main {
         System.out.println("Have a great day! ");
     }
 }
-
-
