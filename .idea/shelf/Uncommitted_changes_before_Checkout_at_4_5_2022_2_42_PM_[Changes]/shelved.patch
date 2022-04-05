@@ -1,0 +1,28 @@
+Index: src/com/company/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.company;\r\n\r\nimport java.time.LocalDateTime;\r\n\r\npublic class Main {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        var now = LocalDateTime.now();\r\n        var monthNumber = now.getMonthValue();\r\n\r\n        switch (monthNumber) {\r\n            case 1:\r\n                System.out.println(\"The month is January\");\r\n                break;\r\n            case 2:\r\n                System.out.println(\"The month is February\");\r\n                break;\r\n            case 3:\r\n                System.out.println(\"The month is March\");\r\n                break;\r\n            case 9:\r\n            case 10:\r\n            case 11:\r\n                System.out.println(\"It's the 4th quarter\");\r\n                break;\r\n            default:\r\n                System.out.println(\"You chose another month\");\r\n        }\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/company/Main.java b/src/com/company/Main.java
+--- a/src/com/company/Main.java	
++++ b/src/com/company/Main.java	
+@@ -11,13 +11,16 @@
+ 
+         switch (monthNumber) {
+             case 1:
+-                System.out.println("The month is January");
++                System.out.println("month is january");
+                 break;
+             case 2:
+                 System.out.println("The month is February");
+                 break;
+             case 3:
+                 System.out.println("The month is March");
++                break;
++            case 4:
++                System.out.println("The month is April");
+                 break;
+             case 9:
+             case 10:
